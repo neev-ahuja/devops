@@ -1,0 +1,115 @@
+@import "tailwindcss";
+
+@theme {
+    --color-primary: #9d4300;
+    --color-primary-container: #f97316;
+    --color-primary-fixed: #ffdbca;
+    --color-primary-fixed-dim: #ffb690;
+    --color-on-primary: #ffffff;
+    --color-on-primary-container: #582200;
+    --color-on-primary-fixed: #341100;
+    --color-on-primary-fixed-variant: #783200;
+
+    --color-secondary: #006e2f;
+    --color-secondary-container: #6bff8f;
+    --color-secondary-fixed: #6bff8f;
+    --color-secondary-fixed-dim: #4ae176;
+    --color-on-secondary: #ffffff;
+    --color-on-secondary-container: #007432;
+    --color-on-secondary-fixed: #002109;
+    --color-on-secondary-fixed-variant: #005321;
+
+    --color-tertiary: #565e74;
+    --color-tertiary-container: #929ab2;
+    --color-tertiary-fixed: #dae2fd;
+    --color-tertiary-fixed-dim: #bec6e0;
+    --color-on-tertiary: #ffffff;
+    --color-on-tertiary-container: #2a3246;
+    --color-on-tertiary-fixed: #131b2e;
+    --color-on-tertiary-fixed-variant: #3f465c;
+
+    --color-background: #f8f9ff;
+    --color-surface: #f8f9ff;
+    --color-surface-dim: #cbdbf5;
+    --color-surface-bright: #f8f9ff;
+    --color-surface-container-lowest: #ffffff;
+    --color-surface-container-low: #eff4ff;
+    --color-surface-container: #e5eeff;
+    --color-surface-container-high: #dce9ff;
+    --color-surface-container-highest: #d3e4fe;
+    --color-surface-variant: #d3e4fe;
+    --color-surface-tint: #9d4300;
+
+    --color-on-surface: #0b1c30;
+    --color-on-surface-variant: #584237;
+    --color-on-background: #0b1c30;
+
+    --color-outline: #8c7164;
+    --color-outline-variant: #e0c0b1;
+
+    --color-inverse-surface: #213145;
+    --color-inverse-on-surface: #eaf1ff;
+    --color-inverse-primary: #ffb690;
+
+    --color-error: #ba1a1a;
+    --color-error-container: #ffdad6;
+    --color-on-error: #ffffff;
+    --color-on-error-container: #93000a;
+
+    --radius: 0.25rem;
+    --radius-lg: 0.5rem;
+    --radius-xl: 0.75rem;
+    --radius-full: 9999px;
+
+    --spacing-xs: 4px;
+    --spacing-unit: 4px;
+    --spacing-sm: 8px;
+    --spacing-md: 16px;
+    --spacing-lg: 24px;
+    --spacing-xl: 40px;
+    --spacing-2xl: 64px;
+    --spacing-margin: 32px;
+    --spacing-gutter: 24px;
+    --spacing-container-max: 1280px;
+
+    --font-display: "Geist", sans-serif;
+    --font-headline-lg: "Geist", sans-serif;
+    --font-headline-md: "Geist", sans-serif;
+    --font-headline-lg-mobile: "Geist", sans-serif;
+    --font-body-lg: "Inter", sans-serif;
+    --font-body-md: "Inter", sans-serif;
+    --font-body-sm: "Inter", sans-serif;
+    --font-code-md: "JetBrains Mono", monospace;
+    --font-label-caps: "JetBrains Mono", monospace;
+}
+
+@layer base {
+    body {
+        @apply bg-background text-on-background;
+        font-family: var(--font-body-md);
+    }
+}
+
+
+.neo-shadow {
+    box-shadow: 4px 4px 0px 0px #000000;
+}
+
+.neo-shadow-hover:hover {
+    box-shadow: 6px 6px 0px 0px #000000;
+    transform: translate(-2px, -2px);
+}
+
+.neo-shadow-active:active {
+    box-shadow: 0px 0px 0px 0px #000000;
+    transform: translate(4px, 4px);
+}
+
+.material-symbols-outlined {
+    font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+    vertical-align: middle;
+}
+
+.code-gradient {
+    background: linear-gradient(135deg, #0F172A 0%, #1E293B 100%);
+}
